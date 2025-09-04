@@ -160,7 +160,7 @@ span{
     justify-content: center;
     align-items: center;
     gap: 3.875rem;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .profile-picture{
@@ -231,13 +231,14 @@ span{
 
 .content-about{
     display: flex;
-    height: 90vh;
+    height: 40rem;
     flex-direction: column;
     margin-bottom: 2rem;
 }
 
 .main-about{
     width: 95%;
+    height: auto;
     margin: 0 auto;
     background-color: rgba(196,196,196,0.2);
     border-radius: 0.75rem;
@@ -466,7 +467,7 @@ span{
 }
 
 .skills-container{
-    height: 70%;
+    height: 3rem;
     display: flex;
     flex-direction: column;
 }
@@ -861,14 +862,29 @@ span{
     html{
         font-size: 75%;
     }
+
+    .content-home,
+    .content-myprofile{
+         height:80vh;
+    }
+
 }
 
 /* Handphone */
 @media (max-width: 758px){
-     html{
-        font-size: 60%;
+        
+    .navigation ul li a{
+        margin-right: 3rem;
+        font-size: 2rem;
+        padding: 1rem 3rem;
     }
 
+    .navigation  a,
+    .navigation img,
+    .sub-2-first a{
+        font-size: 3.5rem;
+        width: 3.5rem;
+    }
     .navigation-links-1 {
         position: absolute;
         top: 100%;
@@ -911,14 +927,31 @@ span{
 
     .content-home{
         flex-direction: column;
-        margin-top: 5rem;
         font-size: 110%;
         gap: 3rem;
     }
-    .home-left h3{
-        font-size: 2.5rem;
+
+    .content-about{
+        height: auto;
+        margin-bottom: none;
     }
 
+    .home-left h3{
+        font-size : 3rem;
+        padding-bottom:0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.125rem;
+    }
+
+    .home-left h1{
+        font-size : 3.5rem;
+        text-transform: uppercase;
+        padding-bottom: 0.75rem;
+    }
+
+    .main-about-2 h1,
+    .skills-1-utama p,
+    .skill span,
     .main-about-1 p,
     .content-home p,
     .content-home a,
@@ -929,7 +962,6 @@ span{
         font-size: 1.3rem !important;
     }
 
-   
     .profile-picture{
         width: 50vw;
     }
@@ -939,6 +971,7 @@ span{
     }
 
     .content-myprofile{
+        height: auto;
         margin-top: 10rem;
         margin-bottom: 10rem;
     }
@@ -970,17 +1003,21 @@ span{
     .myprofile-history h3,
     .myprofile-history span,
     .myprofile-history p{
-        font-size: 130%;
+        font-size: 170%;
         text-align: left;
     }
 
     .myprofile-column h2{
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
     }
 
     .myprofile-column{
         margin-bottom: 1.5rem;
     }
+
+    .skills-1-utama h1,
+    .skills-1-utama ion-icon,
     .about-me-p h2,
     .project h1,
     .sub-certi-title h1,
@@ -992,12 +1029,10 @@ span{
         font-size: 2.3rem;
         margin-bottom: 20px;
     }
-    .main-about{
-        margin-bottom: 20rem;
-    }
 
     .main-about-1{
         flex-direction: column;
+        grid-area: 1rem;
     }
 
     .main-about-1 img{
@@ -1011,7 +1046,11 @@ span{
 
     .main-about-2{
         margin-top: 1rem;
-        gap: 4rem;
+        gap: 1.5rem;
+    }
+
+    .main-about-2 p{
+        font-size: 1.1rem;
     }
 
     .skill-information{
@@ -1025,7 +1064,7 @@ span{
     }
 
     .project{
-        width: 60vw;
+        width: 30rem;
         height: auto;
         margin-left: 0rem;
         display: flex;
@@ -1038,7 +1077,7 @@ span{
     .project img{
         margin-top: 1rem;
         width: 30rem;
-        height: 17rem
+        height: auto
     }
 
     .project-info{
@@ -1058,7 +1097,6 @@ span{
     }
 
     .certi-item{
-        width: 70vw;
         margin: auto;
         text-align: center;
     }
@@ -1068,7 +1106,7 @@ span{
     }
 
     .certificate-img img{
-        width: 70%;
+        width: 32rem;
         background-color: rgba(196,196,196,0.3);
     }
 
@@ -1077,17 +1115,25 @@ span{
     }
 
     .activity{
+        width: 100%;
         flex-direction: column;
         gap: 2rem;
     }
 
-    .activity-1{
+    .activity-1 img{
         width: 100%;
-        height: 100%;
+        height: auto;
     }
 
-    .activity-1 img{
-        width: 80%;
+    .activity-1{
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+        background-color: rgba(196,196,196,0.3);
+        border-radius: 0.75rem;
+        padding: 1.5rem;
+        width:75%;
+        align-items: center;
     }
 
     .activity-1 p{
@@ -1100,25 +1146,20 @@ span{
         padding-bottom: 10rem;
     }
 
-    .all-skills{
-        gap: 1rem;
-    }
-
     .skills-1{
-        width: 45.9%;
+        width: 90%;
     }
 
     .skills-1{
         margin-bottom: 10px;
-        height: 22rem;
+        height: 30rem;
     }
 
-    .activity-1{
-        width: 50vw;
+    .skills-1-utama p,
+    .skill span{
+        font-size: 1.3rem;
     }
-    .activity-1 img{
-        width: 100%;
-    }
+    
     .footer-container{
         width: 100%;
         flex-wrap: nowrap;
