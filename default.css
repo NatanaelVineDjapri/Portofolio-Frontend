@@ -926,7 +926,7 @@ span{
     }
 
     .content-home{
-        margin-top: 3rem;
+        margin-top: 5rem;
         flex-direction: column;
         font-size: 110%;
         gap: 3rem;
@@ -1149,16 +1149,17 @@ span{
 
     .skills-1{
         width: 90%;
-    }
-
-    .skills-1{
-        margin-bottom: 10px;
-        height: 30rem;
+        min-height: 30rem;
+        height: auto;
     }
 
     .skills-1-utama p,
     .skill span{
         font-size: 1.3rem;
+    }
+
+    .skill-information{
+        margin-top: 3rem;
     }
     
     .footer-container{
