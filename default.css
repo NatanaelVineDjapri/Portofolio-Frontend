@@ -160,7 +160,6 @@ span{
     justify-content: center;
     align-items: center;
     gap: 3.875rem;
-    /* box-sizing: border-box; */
 }
 
 .profile-picture{
@@ -320,7 +319,7 @@ span{
 }
 
 .content-myprofile{
-    height: 100vh;
+    height: auto;
     margin-bottom: 4.875rem;
 }
 
@@ -333,6 +332,7 @@ span{
 
 .myprofile-left{
     width:100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -420,7 +420,7 @@ span{
 .content-skills{
     margin-top: 3rem;
     height: 130vh;
-    padding-bottom: 5.125rem;
+    padding-bottom: 3.125rem;
 }
 
 .programming-languages{
@@ -863,11 +863,10 @@ span{
         font-size: 75%;
     }
 
-    .content-home,
-    .content-myprofile{
+    .content-home{
          height:80vh;
     }
-
+    
 }
 
 /* Handphone */
